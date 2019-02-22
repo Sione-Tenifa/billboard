@@ -1,0 +1,11 @@
+<div class="ui card">
+  <div class="content">
+    <p class="header">
+      <%= @list.name %>
+    </p>
+  </div>
+  <div class="extra content">
+    <%= link_to 'Edit', edit_list_path(@list) %> |
+    <%= link_to 'Back', lists_path %>
+  </div>
+</div>
