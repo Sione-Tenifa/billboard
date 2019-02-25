@@ -1,4 +1,13 @@
-<h1>kgkgiug</h1>
+
+
+<h1><%= @songs.name %></h1>
+
+  <ul>
+  <% @artist.songs.each do |songs| %>
+    <li><%= link_to songs.name, artist_songs_path(@artist)  %></li>
+  <% end %>
+</ul>
+
 
 
 
