@@ -1,4 +1,12 @@
-<h1><%= @list.name %></h1>
+<div class="ui card">
+  <div class="content">
+    <p class="header">
+    <%= @list.name %>
+    </p>
+
+  <div>
+
+  <div class='extra content'>
 <h4>Name: <%= @artist.name %></h4>
 <br />
 <h4> Songs: </h4>
@@ -9,9 +17,10 @@
 </ul>
 
 
-<%= link_to 'Songs', artist_songs_path(@artist, @songs) %> |
-<br />
 
+<%= link_to 'Songs', artist_songs_path(@artist, @songs) %> |
 <%= link_to 'Edit Artist', edit_list_artist_path([@list, @artist]) %> |
 <%= link_to 'Delete Artist', [@list, @artist], method: :delete %> |
 <%= link_to 'Back To Artist', list_artists_path(@list) %>
+</div>
+
